@@ -1,3 +1,7 @@
-provider "phaser" {
-  # example configuration here
+terraform {
+  required_providers {
+    phaser = {
+      source = "sigsrv/phaser"
+    }
+  }
 }
