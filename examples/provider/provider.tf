@@ -1,3 +1,3 @@
-provider "scaffolding" {
+provider "phaser" {
   # example configuration here
 }
