@@ -40,7 +40,9 @@ func (p *PhaserProvider) Configure(ctx context.Context, req provider.ConfigureRe
 }
 
 func (p *PhaserProvider) Resources(ctx context.Context) []func() resource.Resource {
-	return []func() resource.Resource{}
+	return []func() resource.Resource{
+		NewSequentialResource,
+	}
 }
 
 func (p *PhaserProvider) EphemeralResources(ctx context.Context) []func() ephemeral.EphemeralResource {
